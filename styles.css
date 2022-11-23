@@ -1,0 +1,183 @@
+/*Display properties: there are 4:- 
+block, in-line, in-line block and none. 
+1) Block: doesnt let any element sit next to it and occupies the whole width, we can change the width and height though. 
+2) In-line: lets other elements sit next to each other but you will not be able to change its width. 
+3) In-line block: lets change height and width and also lets us sit elements alongside each other.
+4) None removes the element from the page as if it isnt there.
+**There is another property called visibility and if it is set to none, then the element will not be shown on the page but its space will be reserved.
+*/
+
+/*Position properties: there are  four types:-
+1)static: it is default value. i.e. the element is positioned according to the normal flow of the document.
+
+2) relative: it is used to change the postion of the element with relation to its previous position, thats why it is called realtive poisitioning. Object is not removed from the flow of the document i.e. no other object takes it's place automatically.
+
+3) absolute: it is used to change the position of an element with respect to its container. It removes the object from the flow of the document. You can literally place it whereever you like on the screen and it leaves it's place and another element takes it's place automatically.
+
+4) fixed: it is used to fix an element so that it doesnot leave the screen even if we scroll.
+*/
+
+/*Centering the elements:-
+To centre everything in the parent body 'text-align: center' is used. However it is rendered useless for an element whose width has been specified by the user.
+In that case use set 'margin: auto' to centre the element despite having defned its width.
+*/
+
+body{
+    margin: 0;
+    text-align: center;
+}
+.top-container{
+    
+    position: relative;
+    padding-top: 100px; 
+    background-color:#e4f9f5;
+}
+h1{
+    font-size: 6rem;
+   margin: 50px auto 0 auto ;
+   font-family: 'Sacramento', cursive;
+   color: #66BFBF;
+   line-height: 2;
+}
+h2{
+    font-size: 2rem;
+    margin: 0;  
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #66BFBF;
+    font-weight: normal;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+}
+
+.profile{
+    margin: 70px auto;
+}
+
+.profile-desc{
+    width: 30%;
+}
+.greetings, .profile-desc{
+    margin: 30px auto 30px auto; 
+}
+
+.skills-head{
+    margin: 70px auto;
+}
+
+h3, a{
+    color: #11999E;
+}
+
+p{
+    color: #40514E;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+.bottom-cloud{
+    position: absolute;
+    left: 280px;
+    bottom: 300px;
+    height: 65px;
+    width: 200px;
+}
+
+.top-cloud{
+    position: absolute;
+    right: 275px;
+    top: 55px;
+    height: 65px;
+    width: 200px;
+}
+.profile-pic{
+    width: 250px;
+    height: 250px;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 0 auto 90px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.code-pic{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+.trek-pic{
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.bottom-container{
+    margin-top: 50px;
+    padding: 20px 0 20px 0;
+    background-color: #66BFBF;
+    
+
+}
+
+.contact-me{
+    margin: 90px auto;
+}
+.contact-middle{
+    margin-bottom: 40px;
+}
+
+.contact-desc{
+    margin: 0 auto 60px auto;
+    width: 40%;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 1.25rem;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background:  #30e3cb;
+    background-image: -webkit-linear-gradient(top,  #30e3cb,  #2bc4ad);
+    background-image: -moz-linear-gradient(top,  #30e3cb,  #2bc4ad);
+    background-image: -ms-linear-gradient(top,  #30e3cb,  #2bc4ad);
+    background-image: -o-linear-gradient(top,  #30e3cb,  #2bc4ad);
+    background-image: linear-gradient(to bottom,  #30e3cb,  #2bc4ad);
+    text-decoration: none;
+  }
+
+  .footer-link{
+    margin: 30px;
+    text-decoration: none;
+    font-size: 1.25rem;
+  }
+
+  a:hover{
+    color: #EAF6F6;
+  }
+  
+  .copyright{
+    color: #EAF6F6;
+  }
+
+  hr{
+    border-style: dotted none none none;
+    border-width: 7px;
+    width: 5%;
+    color: #B2B2B2;
+  }
